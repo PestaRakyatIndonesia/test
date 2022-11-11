@@ -122,12 +122,12 @@ li{
 .icon.cross{
   color: #cd3241;
 }
-.btn{
+form{
   display: flex;
   justify-content: center;
-  
 }
-.btn input{
+button{
+  margin: auto;
   border: none;
   font-size: 20px;
   font-weight: 500;
@@ -137,15 +137,15 @@ li{
   cursor: pointer;
   width: 70%;
 }
-.regular .btn input{
+.regular button{
   background-color: #ff002b;
   color: white;
 }
-.vip .btn input{
+.vip button{
   background-color: #ffd700;
   color: white;
 }
-.vvip .btn input{
+.vvip button{
   background-color: black;
   color: white;
 }
