@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.header{
+  text-align: center;
+  margin-top: 30px;
+}
+body{
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://uploads-ssl.webflow.com/632aa71e099f148036e2c099/636b8b72e5015062179741b4_indonesia-flag-ruffled-beautifully-waving-macro-close-up-shot%20(1).jpg");
+  background-size: cover;
+}
+.main{
+  max-width: 1090px;
+  width: 100%;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.table{
+  background-color: #fff;
+  width: calc(33% - 20px);
+  padding: 30px 30px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-radius: 7px;
+  background-image: url("https://uploads-ssl.webflow.com/632aa71e099f148036e2c099/636935f95b56692c69a77f9a_imageedit_2_9282631321.png");
+  background-size: cover;
+}
+h1{
+  color: #fff;
+  font-size: 56px;
+}
+h2 {
+  font-family: sans-serif;
+  margin-bottom: 30px;
+  color: #2F4F4F;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+}
+h2::before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 2px;
+  background: #000;
+  top: 50%;
+  position: absolute;
+}
+.regular h2::before,
+.regular h2::after{
+  background:  red;
+}
+.vip h2::before,
+.vip h2::after{
+  background:  #ffd700;
+}
+.vvip h2::before,
+.vvip h2::after{
+  background:  black;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 2px;
+  background: #000;
+  top: 50%;
+  position: absolute;
+}
+h2::before{
+  left: 0;
+}
+h2::after {
+  right: 0;
+}
+.price{
+  display: flex;
+  text-align: center;
+}
+.kiri{
+  margin-top: 10px;
+  margin-left: 2px;
+  font-size: 22px;
+  color: #2F4F4F;
+  width: 40%;
+  text-align: right;
+}
+.kanan{
+  color: #2F4F4F;
+  width: 69%;
+  font-size: 66px;
+  text-align: left;
+}
+li{
+  margin-bottom: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.list{
+  font-size: 17px;
+  font-weight: 400;
+}
+.icon{
+  font-size: 20px;
+}
+.icon.check{
+  color: #2db94d;
+}
+.icon.cross{
+  color: #cd3241;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  
+}
+.btn input{
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  outline: none;
+  height: 45px;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 70%;
+}
+.regular .btn input{
+  background-color: #ff002b;
+  color: white;
+}
+.vip .btn input{
+  background-color: #ffd700;
+  color: white;
+}
+.vvip .btn input{
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 1020px) {
+  .table{
+    width: calc(50% - 20px);
+    margin-bottom: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 698px) {
+  .table{
+    width: 100%;
+  }
+}
+.package-name{
+  height: 2px;
+  position: relative;
+  margin: 60px 0;
+}
+.regular .package-name{
+  background-color: #ff002b;
+}
+.vip .package-name{
+  background-color: #ffd700;
+}
+.vvip .package-name{
+  background-color: black;
+}
+.package-name::before{
+  position: absolute;
+  font-size: 24px;
+  left: 50%;
+  top: 50%;
+  right: auto;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  text-align: center; 
+  width: 40%
+}
+.regular .package-name::before{
+  content: "Semeru (Regular)";
+}
+.vip .package-name::before{
+  content: "Bromo (VIP)";
+}
+.vvip .package-name::before{
+  content: "Rinjani (VVIP)";
+}
+.footer{
+  width: 100%;
+  text-align: center;
+  background-color: #24262b;
+  padding: 20px 0;
+  color: #fff;
+}
